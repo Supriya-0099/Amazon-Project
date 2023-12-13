@@ -40,10 +40,10 @@ public class AmazonSearchTest {
 	private static void testSearch1() {
 		
 		WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
-		searchBox.sendKeys("Iphone 15 pro max");
+		searchBox.sendKeys("Iphone 13");
 		searchBox.submit();
 		
-		String expectedTitle = "Amazon.in : Iphone 15 pro max";
+		String expectedTitle = "Amazon.in : Iphone 13";
         String actualTitle = driver.getTitle();
 		
 		if(expectedTitle.equals(actualTitle)) {
